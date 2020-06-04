@@ -1,0 +1,90 @@
+.demo-box.basic-demo.templates-demo.gap-demo
+	.documentation
+		.text
+			.doc-title Футер
+			.doc-description 
+				p Този футер е постигнат много лесно, като се използва "display: grid" за постигане на 3 реда, които заемат цялото място за основният лейаут.
+				br
+				p А колонките с връзки са разделени на елемента, посока column всяка от която автоматично заема по 1 fr (fractioanl unit)
+
+		pre
+			code.language-css
+				|footer {
+				|	display: grid;
+				|}
+
+				|.footer-links {
+				|	display: grid;
+				|	padding: 10px;
+				|	width: 100%;
+				|	grid-template-columns: 1fr 1fr 1fr 1fr;
+				|}
+
+
+	footer
+		.footer-header
+			img.placeholder-logo(src='./assets/images/placeholderLogo.svg')
+
+		.footer-links
+			.footer-section
+				h4 Заглавие на категория
+				ul.footer-list
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+
+			.footer-section
+				h4 Заглавие на категория
+				ul.footer-list
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+
+			.footer-section
+				h4 Заглавие на категория
+				ul.footer-list
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+
+			.footer-section
+				h4 Заглавие на категория
+				ul.footer-list
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+					li
+						a(href='#') Връзка от футера
+		
+		.footer-bottom
+			p
+				| Footer css grid demo
+				
+			small Marian Radev F82365

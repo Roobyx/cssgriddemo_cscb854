@@ -1,0 +1,49 @@
+// @import '../node_modules/sierra-library/lib/index';
+
+@import 'reset';
+
+// Home styles
+#home {
+	@import 'home';
+}
+// Global styles
+// -----------------------
+@import 'global';
+@import 'documentation';
+
+// Shared styles
+// -----------------------
+
+@import 'shared';
+
+// Demo 1
+// -----------------------
+#gridDemo {
+	@import 'gridDemo';
+}
+
+// Layout Demo
+// -----------------------
+#layoutDemo {
+	@import 'layout';
+}
+
+// Gallery Demo
+// -----------------------
+
+#galleryDemo {
+	@import 'gallery';
+}
+
+// Footer Demo
+// -----------------------
+
+#footerDemo {
+	@import 'footer';
+}
+
+// Navigation Demo
+// -----------------------
+#navDemo {
+	@import 'navigationDemo';
+}

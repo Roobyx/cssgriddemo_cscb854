@@ -1,0 +1,35 @@
+.demo-box.basic-demo.templates-demo.gap-demo
+	.documentation
+		.text
+			.doc-title Галерия
+			.doc-description 
+				p Css grid е особено подходящ за изреждане на много елементи. С комбинация от няколко функции, можем да изградим галерия само от 3 реда код!
+				br
+				p 1. 
+					span.highlighted minmax(min, max) 
+					p Е функционална обозначение, която определя диапазон на размера, по-голям или равен на min и по-малък или равен на max. Ако max е по-малък от min, тогава max се игнорира и функцията се третира като min. Като максимална стойност <flex> определя гъвкавия фактор на трасето. Той е невалиден като минимум.
+				br
+				p 2. 
+					span.highlighted repeat([positive-integer | auto-fill | auto-fit] , track-list)
+					p Е функция която повтаря елементите деца. Целта ѝ е да даде бърз и лесен начин за повтаряне на много редове или колони според използвания шаблон.
+
+		pre
+			code.language-css
+				|img {
+				|	width: 100%;
+				|	height: auto;
+				|}
+
+				|.wrapper {
+				|	display: grid;
+				|	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+				|	gap: 1em;
+				|}
+
+	.wrapper
+		img(width='300', height='169', src='./assets/images/1.jpg', alt='Marian Radev f82365')
+		img(width='300', height='169', src='./assets/images/2.jpg', alt='Marian Radev f82365')
+		img(width='300', height='169', src='./assets/images/3.jpg', alt='Marian Radev f82365')
+		img(width='300', height='169', src='./assets/images/4.jpg', alt='Marian Radev f82365')
+		img(width='300', height='169', src='./assets/images/5.jpg', alt='Marian Radev f82365')
+		img(width='300', height='169', src='./assets/images/6.jpg', alt='Marian Radev f82365')

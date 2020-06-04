@@ -1,0 +1,15 @@
+// Gallery styles
+// -----------------------
+
+img {
+	width: 100%;
+	border-radius: 10px;
+	height: auto;
+	border: 1px dashed #444;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 1vw;
+}

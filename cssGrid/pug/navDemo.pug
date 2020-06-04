@@ -1,0 +1,45 @@
+.demo-box.basic-demo.templates-demo.gap-demo
+	.documentation
+		.text
+			.doc-title Навигация
+			.doc-description 
+				p Навигационна горна лента. 
+				br
+				p Съдържа 3 елемента с грид структури. 
+				p 1. Цялостният лейаут е разделен автоматично на колони.
+				p 2. Грид-а в логото е ползван само за позициониране.
+				p 3. Връзките са подравнени в дясно от самият лейаут. Като самите те също са само подравнени чрез align, кактои и логото.
+		pre
+			code.language-css
+				|#navigationBar {
+				|	display: grid;
+				|	min-height: 100px;
+				|	grid-auto-flow: column;
+				|	grid-gap: 1.5em;
+				|}
+				|	
+				|#logo {
+				|	display: grid;
+				|	justify-content: start;
+				|	align-content: center;
+				|}
+				|	
+				|#navigationLinks {
+				|	display: grid;
+				|	justify-content: right;
+				|	align-content: center;
+				|	grid-auto-flow: column;
+				|}
+	header
+		nav
+			#navigationBar
+				#logo.reverse
+					.logo
+						img.placeholder-logo(src='./assets/images/placeholderLogo.svg')
+
+				#navigationLinks
+					a(href='#') Начало
+					a(href='#') За нас
+					a(href='#') Блог
+					a(href='#') Галерия
+					a(href='#') Контакти

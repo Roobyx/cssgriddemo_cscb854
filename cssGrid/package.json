@@ -1,0 +1,21 @@
+{
+  "name": "f82365_cssgriddemo",
+  "version": "1.0.0",
+  "description": "A demo project for the Web Technology cource CSCB854 at New Bulgarian University May 2020. Made by Marian Radev",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Roobyx/cssgriddemo_cscb854"
+  },
+  "keywords": [
+    "Marian",
+    "Radev"
+  ],
+  "author": "Marian Radev",
+  "license": "MIT"
+}

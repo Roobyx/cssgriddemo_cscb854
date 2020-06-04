@@ -1,0 +1,190 @@
+.demo-box.basic-demo
+	.documentation
+		.text
+			.doc-title Дисплей "grid"
+			.doc-description При единствено зададен "display: grid" елементите деца, ще се наредят в редове, заемащи пълната дължина
+
+		.snippets
+			pre
+				code.language-css
+					| .wrapper {
+					|	display: grid;
+					|}
+			pre.language-pug
+				code.language-pug
+					|.wrapper
+					|	.box.a Елемент
+					|	.box.b Елемент
+					|	.box.c Елемент
+					|	.box.d Елемент
+					|	.box.e Елемент
+					|	.box.f Елемент
+
+	.wrapper
+		.box.a Елемент
+		.box.b Елемент
+		.box.c Елемент
+		.box.d Елемент
+		.box.e Елемент
+		.box.f Елемент
+
+
+
+
+
+.demo-box.inline-demo
+	.documentation
+		.text
+			.doc-title Дисплей "inline-grid"
+			.doc-description Но ако изплзваме "display: inline-grid;", то тогава всички деца ще заемат само нужното за най-големият от тях място.
+
+		pre
+			code.language-css
+				| .wrapper {
+				|	display: inline-grid;
+				|}
+
+
+	.wrapper
+		.box.a Елемент
+		.box.b По-дълъг Елемент
+		.box.c Елемент
+		.box.d Къс
+		.box.e Елемент
+		.box.f Елемент
+
+
+
+
+
+
+.demo-box.basic-demo.templates-demo
+	.documentation
+		.text
+			.doc-title Grid-templates
+			.doc-description 
+				p Едно от най-добрите неща на Css Grid е, че можем да играждаме шаблони. Те представляват: "grid-template-" правила, след което добавяме съответно "columns" за контрол над колоните и "rows" за редовете.
+				p Шаблоните създават толкова редове/колони, колкото стоиности им се зададат.
+				p В този случай, задаваме 2 стойности за редове и 3 стоиности за колони.
+				p Всички познати единици се приемат като стоиности в това число px, rem, em, %, vh, vw, както и специалната за css grid "fr"
+				
+
+		pre
+			code.language-css
+				| .wrapper {
+				|	display: grid;
+				| 	grid-template-rows: 50px 100px;
+				|	grid-template-columns: 160px 260px 320px;
+				|}
+
+
+	.wrapper
+		.box.a Елемент 1 
+		.box.b Елемент 2
+		.box.c Елемент 3
+		.box.d Елемент 4
+		.box.e Елемент 5
+		.box.f Елемент 6
+
+
+.demo-box.basic-demo.templates-demo.gap-demo
+	.documentation
+		.text
+			.doc-title Разстояние
+			.doc-description За да се добави разстояние между елементите (gitter), се използва "gap". Gap, ще работи за вертикално и хоризонтално отстояние.
+
+		pre
+			code.language-css
+				| .wrapper {
+				|	display: grid;
+				| 	grid-template-rows: 50px 100px;
+				|	grid-template-columns: 160px 260px 320px;
+				|	gap: 1vw;
+				|}
+
+
+	.wrapper
+		.box.a Елемент 1 
+		.box.b Елемент 2
+		.box.c Елемент 3
+		.box.d Елемент 4
+		.box.e Елемент 5
+		.box.f Елемент 6
+
+
+.demo-box.basic-demo.templates-demo.gap-demo
+	.documentation
+		.text
+			.doc-title Разстояние
+			.doc-description За да се добави разстояние между елементите (gitter), се използва "gap". Gap, ще работи за вертикално и хоризонтално отстояние.
+
+		pre
+			code.language-css
+				| .wrapper {
+				|	display: grid;
+				| 	grid-template-rows: 50px 100px;
+				|	grid-template-columns: 160px 260px 320px;
+				|	gap: 1vw;
+				|}
+
+
+	.wrapper
+		.box.a Елемент 1 
+		.box.b Елемент 2
+		.box.c Елемент 3
+		.box.d Елемент 4
+		.box.e Елемент 5
+		.box.f Елемент 6
+
+
+.demo-box.basic-demo.templates-demo.gap-demo.align-demo
+	.documentation
+		.text
+			.doc-title Разстояние
+			.doc-description 
+				p CSS box module допълва CSS Grid, за да позволи елементите да бъдат подравнени по реда на оста на колоната.
+				p justify-items и justify-self подравняване на елементи по реда, и align-items и align-self на елементи по колоната.
+				p justify-items елементи и align-items се прилагат към мрежовия контейнер и поддържат следните стойности:
+	
+		pre.language-html
+			code.language-html
+				ul 
+					li auto
+					li normal
+					li start
+					li end
+					li center
+					li stretch (Използва се по подразбиране)
+					li baseline
+					li first baseline
+					li last baseline
+		.text
+			.doc-description 
+				p Тези правила могат да бъдат използвани за подредба и на цели групи като се използва "-content"
+		pre
+			code.language-css
+				| .wrapper {
+				|	display: grid;
+				| 	grid-template-rows: 50px 100px;
+				|	grid-template-columns: 160px 260px 320px;
+				|	gap: 1vw;
+				|	justify-items: center
+				|}
+
+
+	.wrapper
+		.box.a Елемент 1 
+		.box.b Елемент 2
+		.box.c Елемент 3
+		.box.d Елемент 4
+		.box.e Елемент 5
+		.box.f Елемент 6
+
+
+
+
+
+
+
+
+		

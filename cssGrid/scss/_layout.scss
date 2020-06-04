@@ -1,0 +1,21 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 2.1fr 0.4fr;
+	gap: 1px 1px;
+	grid-template-areas: "Header Header Header Header" "Sidebar main main main" "footer footer footer footer";
+
+	height: 90vh;
+}
+
+.footer { grid-area: footer; }
+
+.Header { grid-area: Header; }
+
+.main { grid-area: main; }
+
+.Sidebar { grid-area: Sidebar; }
+
+section {
+	border: 1px dashed #ccc;
+}

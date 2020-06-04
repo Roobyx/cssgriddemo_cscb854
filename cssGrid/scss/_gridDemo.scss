@@ -1,0 +1,40 @@
+// Grid demo
+// -----------------------
+
+// Basic demo
+.basic-demo {
+	.wrapper {
+		display: grid;
+	}
+}
+
+// Inline
+.inline-demo {
+	.wrapper {
+		display: inline-grid;
+	}
+}
+
+// Templates
+.templates-demo {
+	.wrapper {
+		grid-template-rows: 50px 100px;
+		grid-template-columns: 160px 260px 320px;
+	}
+}
+
+
+// Gap
+.gap-demo {
+	.wrapper {
+		gap: 1vh;
+	}
+}
+
+
+// Align
+.align-demo {
+	.wrapper {
+		justify-items: center
+	}
+}

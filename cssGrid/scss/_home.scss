@@ -1,0 +1,27 @@
+
+.home {
+	text-align: center;
+	margin: 10vh;
+
+	h1 {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		font-size: 40px;
+		line-height: 48px;
+		color: #11486C;
+		font-weight: bold;
+
+		margin-bottom: 4vh;
+	}
+	
+	p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+	}
+
+}
+
+.box {
+	margin-bottom: 2vh;
+}
